@@ -1,0 +1,30 @@
+{
+  "name": "redux-form-auto-doc",
+  "version": "1.0.0",
+  "description": "Documentation for redux-form-auto",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "sphinx-build -b html ./docs_src ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgonz64/redux-form-auto-doc.git"
+  },
+  "keywords": [
+    "redux-form-auto",
+    "documentation"
+  ],
+  "author": "David González <braben@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgonz64/redux-form-auto-doc/issues"
+  },
+  "homepage": "https://github.com/dgonz64/redux-form-auto-doc#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "redux-form-auto": "^1.0.11"
+  }
+}
