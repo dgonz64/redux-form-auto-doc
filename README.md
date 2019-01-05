@@ -6,9 +6,9 @@ Documentation for [redux-form-auto](https://github.com/dgonz64/redux-form-auto)
 
 ### Install jsdoc and sphinx
 
-  $ npm install -g jsdoc
-  $ pip install sphinx-js
+    $ npm install -g jsdoc
+    $ pip install sphinx-js
 
 ### Build
 
-  $ npm run build
+    $ npm run build
