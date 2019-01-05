@@ -25,6 +25,7 @@
   "homepage": "https://github.com/dgonz64/redux-form-auto-doc#readme",
   "dependencies": {},
   "devDependencies": {
-    "redux-form-auto": "^1.0.11"
+    "redux-form-auto": "^1.0.11",
+    "redux-form-auto-bootstrap3": "^1.0.0"
   }
 }
