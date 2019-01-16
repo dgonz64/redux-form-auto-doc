@@ -79,9 +79,12 @@ Prop               Type              Use
 ``schemaTypeName`` string (required) Name of the schema that contains the field
 ``inputComponent`` element           Component used to render the input
 ``type``           string            Passed to ``inputComponent``
+``typeValidator``  function          Validator for the type. See :ref:`"Override or add type validation" <type-val>`
 ================== ================= ==========================================
 
 There are also other props passed depending on current implementation of ``renderInput``, the function in charge of choosing the component and render it.
+
+``typeValidator`` is needed to avoid an error when validating field's type. If unsure provide ``value => false``.
 
 Form component
 ==============
@@ -198,3 +201,17 @@ To implement the ``isEven`` test using ES6 arrow functions::
   )
 
 Because the validator takes advantage of the closure from the constructor, it's useful to write both in that cascade manner.
+
+.. _type-val:
+
+Override or add type validation
+===============================
+
+To avoid type errors as false positives you can change its behaviour in two ways:
+
+* Adding ``typeValidator`` in the component definition when you create it.
+* Calling addSpecialTypeValidator specifying the field and the validation.
+
+The validator has the same signature as others validators: Will receive the field's value and returns ``false`` for "valid".
+
+.. js:autofunction:: addSpecialTypeValidator
