@@ -202,6 +202,8 @@ To implement the ``isEven`` test using ES6 arrow functions::
 
 Because the validator takes advantage of the closure from the constructor, it's useful to write both in that cascade manner.
 
+You can construct translatable objects using ``translatable()``. See :ref:`Translatable objects <translatable>`
+
 .. _type-val:
 
 Override or add type validation
