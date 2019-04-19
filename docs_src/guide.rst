@@ -41,6 +41,40 @@ You can specify the type as a constructor. There's not an easily measurable adva
 
   { type: String }
 
+select and radios
+^^^^^^^^^^^^^^^^^
+
+They both allow options as an array that can be one of strings with the options keys that will be feed to translator using ``trModel()`` or can be objects in the form ``{ value, label }``. If an object is provided, label will be used for the HTML content (display) and value for the option's value.
+
+Options can also be a function. In that case it will be evaluated with the component props as the first argument. The results used as explained above, that is, array of strings or objects.
+
+Example with keys::
+
+  {
+    type: 'select',
+    options: ['red', 'blue']
+  }
+  
+Example with objects::
+
+  {
+    type: 'select',
+    options: [
+      { value: 'r', label: 'red' },
+      { value: 'b', label: 'blue' }
+    ]
+  }
+
+Example with function. This example assumes component has a color collection in the props::
+
+  {
+    type: 'select',
+    options: props => props.colors.map(color => ({
+      value: color.id,
+      label: color.name
+    }))
+  }
+
 Validators
 ----------
 
