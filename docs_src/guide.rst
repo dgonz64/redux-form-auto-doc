@@ -65,7 +65,7 @@ Example with objects::
     ]
   }
 
-Example with function. This example assumes component has a color collection in the props::
+Example with function. This example assumes ``Autoform`` component has a color collection in the props::
 
   {
     type: 'select',
